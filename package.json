@@ -1,0 +1,23 @@
+{
+  "name": "shave-xp-cypress",
+  "version": "1.0.0",
+  "description": "projeto de automação do bootcamp de Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "automação",
+    "de",
+    "testes",
+    "automação",
+    "com",
+    "cypress"
+  ],
+  "author": "Gerson Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
