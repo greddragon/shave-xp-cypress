@@ -6,12 +6,17 @@ import data from "../fixtures/user-login.json";
 
 describe("login", () => {
   context("quando submeto o formulario", () => {
-    it("deve logar com sucesso", () => {
+    it.only("deve logar com sucesso", () => {
       const user = data.sucess;
+
+      cy.task("removeUser", user.email)
+          .then(function(result) {
+            cy.log(result);
+          })
 
       cy.request({
         method: "POST",
-        url: "http://localhost:3000/users",
+        url: "http://localhost:3333/users",
         body: user,
       }).then(function (res) {
         expect(res.status).to.eq(201);
