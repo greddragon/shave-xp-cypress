@@ -18,6 +18,7 @@
   "author": "Gerson Santos",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.8.1"
+    "cypress": "^12.8.1",
+    "pg": "^8.10.0"
   }
 }
